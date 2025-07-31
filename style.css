@@ -1,0 +1,41 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;  /* Desabilita uma linha que fica em volta do input e do select  */
+    
+}
+
+body {
+
+    background-color: #8a51fc;
+
+}
+
+.main-logo {
+
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: 12px auto 8px;
+
+}
+
+main {
+
+    background-color: #F4F4F4;
+    width: 375px;
+    height: 712px;
+    border-radius: 20px;
+    padding: 44px 24px 24px;
+    display: block;
+    margin: 8px auto 20px ;
+
+}
+
+.flag-currency {
+
+    width: 44px;
+}
