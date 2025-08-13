@@ -20,16 +20,19 @@
 
         <label>   <!--  usado no html semantico, mais um nome para div -->
             Converter <b>de</b>
-            <select>
-                <option>R$ Real Brasileiro</option>
+            <select class="currency-select-convert">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
 
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar Americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select-converted">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="real">R$ Real Brasileiro</option>
             </select>
         </label>
 
@@ -44,8 +47,8 @@
 
             <div class="currency-box">
 
-                <img class="flag-currency" src="./assets/real.png" alt="brazilian flag">
-                <p class="currency">Real</p>
+                <img class="flag-currency" id="currency-image-convert" src="./assets/real.png" alt="brazilian flag">
+                <p class="currency" id="currency-name-convert">Real</p>
                 <p class="convert-currency">R$ 00,00</p>
 
             </div>
@@ -54,8 +57,8 @@
 
             <div class="currency-box">
 
-                <img class="flag-currency" src="./assets/dolar.png" alt="eua flag">
-                <p class="currency">Dólar Americano</p>
+                <img class="flag-currency" id="currency-image-converted" src="./assets/dolar.png" alt="eua flag">
+                <p class="currency" id="currency-name">Dólar Americano</p>
                 <p class="converted-currency">US$ 00,00</p>
 
             </div>
