@@ -5,6 +5,7 @@ const currencySelectConvert = document.querySelector(".currency-select-convert")
 const currencyToConvert = document.querySelector(".convert-currency")
 const inputValueConvert = document.querySelector(".input-value-convert").value
 
+// Função para converter moedas, quando mudamos apenas o segundo select
 function convertValues(){
 
     
@@ -36,6 +37,7 @@ function convertValues(){
 
 }
 
+// Função que muda o texto e a imagem da moeda convertida do segundo "select"
 function changeCurrencyConverted(){
 
     const currencyName = document.getElementById("currency-name")
@@ -50,6 +52,7 @@ function changeCurrencyConverted(){
 
 }
 
+// Funçaõ que muda o texto e imagem da moeda a ser convertida a partir do primeiro "select"
 function changeCurrencyConvert() {
 
     const currencyNameConvert = document.getElementById("currency-name-convert")
@@ -60,11 +63,12 @@ function changeCurrencyConvert() {
         currencyImageConvert.src = "./assets/dolar.png"
 
         currencyToConvert.innerHTML = new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD"
-    }).format(inputValueConvert)
+            style: "currency",
+            currency: "USD"
+        }).format(inputValueConvert)
 
         
+
     }
 
 
